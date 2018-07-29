@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fa78ea3c-eda5-4629-bde1-6b24a4440070">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataform" uuid="2f8c5c2e-f4bb-4746-ac84-ba71c48a725e">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     dataform.`nama_staf_market` AS dataform_nama_staf_market,
+     dataform.`nama_manager` AS dataform_nama_manager,
+     dataform.`no_dokumen_log` AS dataform_no_dokumen_log,
+     dataform.`no_dokumen_statuspo` AS dataform_no_dokumen_statuspo,
+     dataform.`no_dok_keluhan` AS dataform_no_dok_keluhan,
+     dataform.`tanggal` AS dataform_tanggal,
+     dataform.`revisi` AS dataform_revisi
+FROM
+     `dataform` dataform]]>
+		</queryString>
+		<field name="dataform_nama_staf_market" class="java.lang.String"/>
+		<field name="dataform_nama_manager" class="java.lang.String"/>
+		<field name="dataform_no_dokumen_log" class="java.lang.String"/>
+		<field name="dataform_no_dokumen_statuspo" class="java.lang.String"/>
+		<field name="dataform_no_dok_keluhan" class="java.lang.String"/>
+		<field name="dataform_tanggal" class="java.lang.String"/>
+		<field name="dataform_revisi" class="java.lang.String"/>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     dataform.`nama_staf_market` AS dataform_nama_staf_market,
+     dataform.`nama_manager` AS dataform_nama_manager,
+     dataform.`no_dokumen_log` AS dataform_no_dokumen_log,
+     dataform.`no_dokumen_statuspo` AS dataform_no_dokumen_statuspo,
+     dataform.`no_dok_keluhan` AS dataform_no_dok_keluhan,
+     dataform.`tanggal` AS dataform_tanggal,
+     dataform.`revisi` AS dataform_revisi
+FROM
+     `dataform` dataform]]>
+	</queryString>
+	<field name="dataform_nama_staf_market" class="java.lang.String"/>
+	<field name="dataform_nama_manager" class="java.lang.String"/>
+	<field name="dataform_no_dokumen_log" class="java.lang.String"/>
+	<field name="dataform_no_dokumen_statuspo" class="java.lang.String"/>
+	<field name="dataform_no_dok_keluhan" class="java.lang.String"/>
+	<field name="dataform_tanggal" class="java.lang.String"/>
+	<field name="dataform_revisi" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="113" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle">
+				<reportElement x="0" y="3" width="802" height="110" uuid="0344cffa-7626-4821-ae02-4dca4c34e6ab"/>
+				<imageExpression><![CDATA["C:\\Users\\veri\\Documents\\ISOMRKT\\src\\IMG\\logo2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="258" y="0" width="292" height="41" uuid="62a8aee5-7f0f-4fa8-9795-cb044b66286d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="24"/>
+				</textElement>
+				<text><![CDATA[Laporan Dataform]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="19" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="181" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table 1" style="table 1" x="80" y="0" width="620" height="100" uuid="5d3302ff-c4b3-460e-b6f5-3ccfe048e1f8"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataform" uuid="98009d0d-3e4f-4fe7-abe3-cb857e899822">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="63054548-3ba4-49cd-b723-bd271f256596">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="dcc1c6ba-7b7a-4ea5-bbd6-f108e3537fd2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nama Staff]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="93ebc41b-d3ed-4858-89bd-65c536491779"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{dataform_nama_staf_market}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="a0bd0d90-9af7-4f9c-8ff5-d0c0ccbcdeed">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="5697a8e5-ca95-4141-8b94-deb6ca548a70"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nama Manager]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="0c0f5e7c-1430-43f4-bfe5-7fca55f26ab2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{dataform_nama_manager}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="8344d3fe-194b-41d5-a6c9-649e1fcfc9ce">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="80cefa3b-23fb-4316-9cbf-be8721e815c6"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[No Dokumen Logbook]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="9188db9f-25b8-4e0f-a313-b198b6cdc670"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{dataform_no_dokumen_log}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="5a52f538-7fc2-463c-afbf-4dfe2d8d7945">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="36433082-7a40-4fb5-9d07-4ce25c1efe7a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[No Dokumen Status PO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="82bcc4b0-b972-4705-934f-cf1002d638b1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{dataform_no_dokumen_statuspo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="b6f46c0d-4cad-4c88-9171-3460c6bef67e">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="7c2fb569-47b1-4a96-804f-d102b9117eb5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[No Dokumen Keluhan]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="7e6b7ba1-8ced-49ef-af2b-cbfc17279b76"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{dataform_no_dok_keluhan}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="cbdd6e5d-7e6d-4c73-9728-69e1d530481a">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="3538ec5e-29a8-40bc-baad-ea305f8f315b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Tanggal]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="3b54ab42-356f-45d7-a87e-46832f64708d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{dataform_tanggal}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="1d9c7ca2-c8e6-4acb-ba97-1e8951a751f9">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="b7765ca6-bb43-4be9-a99c-9647bbb87702"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Revisi]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="15fa1bbe-ddcb-4c6e-ad77-4937dd5199a9"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{dataform_revisi}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="48" y="0" width="100" height="20" uuid="033d8663-132c-436a-b849-361c90c5a0dd"/>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<text><![CDATA[Manager Marketing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="636" y="0" width="100" height="20" uuid="79bc55e6-3338-4911-aec1-7717c2e72daa"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Staff Marketing]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="636" y="34" width="100" height="20" uuid="3b54165d-5bde-4915-a20f-61ceb06cc722"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Dwi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="34" width="100" height="20" uuid="38e58cbf-6f6c-4845-be1a-404149ec734b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Dwi]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="12" splitType="Stretch"/>
+	</summary>
+</jasperReport>

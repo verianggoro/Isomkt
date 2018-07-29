@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b87bfd29-458e-49f9-983a-fc7b769349ca">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="New Dataset 1" uuid="4257db8a-a58f-4d83-a4e7-ce94920b9e24">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     tb_statuspo.`kd_proyek` AS tb_statuspo_kd_proyek,
+     tb_statuspo.`tgl_spk` AS tb_statuspo_tgl_spk,
+     tb_statuspo.`nm_perusahaan` AS tb_statuspo_nm_perusahaan,
+     tb_statuspo.`no_spk` AS tb_statuspo_no_spk,
+     tb_statuspo.`status` AS tb_statuspo_status,
+     tb_statuspo.`nm_proyek` AS tb_statuspo_nm_proyek,
+     tb_statuspo.`nilai_kontrak` AS tb_statuspo_nilai_kontrak,
+     tb_statuspo.`no_dokumen_statuspo` AS tb_statuspo_no_dokumen_statuspo,
+     tb_statuspo.`revisi` AS tb_statuspo_revisi,
+     tb_statuspo.`tanggal` AS tb_statuspo_tanggal,
+     tb_statuspo.`nama_staf_market` AS tb_statuspo_nama_staf_market,
+     tb_statuspo.`nama_manager` AS tb_statuspo_nama_manager
+FROM
+     `tb_statuspo` tb_statuspo]]>
+		</queryString>
+		<field name="tb_statuspo_kd_proyek" class="java.lang.String"/>
+		<field name="tb_statuspo_tgl_spk" class="java.lang.String"/>
+		<field name="tb_statuspo_nm_perusahaan" class="java.lang.String"/>
+		<field name="tb_statuspo_no_spk" class="java.lang.String"/>
+		<field name="tb_statuspo_status" class="java.lang.String"/>
+		<field name="tb_statuspo_nm_proyek" class="java.lang.String"/>
+		<field name="tb_statuspo_nilai_kontrak" class="java.lang.String"/>
+		<field name="tb_statuspo_no_dokumen_statuspo" class="java.lang.String"/>
+		<field name="tb_statuspo_revisi" class="java.lang.String"/>
+		<field name="tb_statuspo_tanggal" class="java.lang.String"/>
+		<field name="tb_statuspo_nama_staf_market" class="java.lang.String"/>
+		<field name="tb_statuspo_nama_manager" class="java.lang.String"/>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_statuspo.`kd_proyek` AS tb_statuspo_kd_proyek,
+     tb_statuspo.`tgl_spk` AS tb_statuspo_tgl_spk,
+     tb_statuspo.`nm_perusahaan` AS tb_statuspo_nm_perusahaan,
+     tb_statuspo.`no_spk` AS tb_statuspo_no_spk,
+     tb_statuspo.`status` AS tb_statuspo_status,
+     tb_statuspo.`nm_proyek` AS tb_statuspo_nm_proyek,
+     tb_statuspo.`nilai_kontrak` AS tb_statuspo_nilai_kontrak,
+     tb_statuspo.`no_dokumen_statuspo` AS tb_statuspo_no_dokumen_statuspo,
+     tb_statuspo.`revisi` AS tb_statuspo_revisi,
+     tb_statuspo.`tanggal` AS tb_statuspo_tanggal,
+     tb_statuspo.`nama_staf_market` AS tb_statuspo_nama_staf_market,
+     tb_statuspo.`nama_manager` AS tb_statuspo_nama_manager
+FROM
+     `tb_statuspo` tb_statuspo]]>
+	</queryString>
+	<field name="tb_statuspo_kd_proyek" class="java.lang.String"/>
+	<field name="tb_statuspo_tgl_spk" class="java.lang.String"/>
+	<field name="tb_statuspo_nm_perusahaan" class="java.lang.String"/>
+	<field name="tb_statuspo_no_spk" class="java.lang.String"/>
+	<field name="tb_statuspo_status" class="java.lang.String"/>
+	<field name="tb_statuspo_nm_proyek" class="java.lang.String"/>
+	<field name="tb_statuspo_nilai_kontrak" class="java.lang.String"/>
+	<field name="tb_statuspo_no_dokumen_statuspo" class="java.lang.String"/>
+	<field name="tb_statuspo_revisi" class="java.lang.String"/>
+	<field name="tb_statuspo_tanggal" class="java.lang.String"/>
+	<field name="tb_statuspo_nama_staf_market" class="java.lang.String"/>
+	<field name="tb_statuspo_nama_manager" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="111" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle">
+				<reportElement x="0" y="0" width="802" height="111" uuid="f30b09c9-5f5c-450d-81b6-2e4941fa22a2"/>
+				<imageExpression><![CDATA["C:\\Users\\veri\\Documents\\ISOMRKT\\src\\IMG\\logo2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="11" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="172" y="0" width="440" height="42" uuid="3fc93377-4990-44f9-ac1b-3ab4617ce080"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN STATUS PO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="145" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table" style="table" x="26" y="0" width="700" height="100" uuid="2c9ab020-d958-4581-b76c-71707cc098b0"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="New Dataset 1" uuid="188fa48e-c026-40ec-b2bd-0ea237588de0">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="52" uuid="73353a5b-9c3e-4ed8-aff0-dc51dc275e1d">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="52" height="30" uuid="fcaff3ff-60b5-4002-a02a-e74ef44998f8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Status PO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="52" height="20" uuid="6f67c86f-3c5c-458c-a0f3-098eefd9be83"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_kd_proyek}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="62" uuid="4cb454f1-9dd4-4416-b807-e61d9573d142">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="62" height="30" uuid="6f0945ba-bc32-46fc-9f14-275956aee4bd"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[TGL SPK]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="62" height="20" uuid="11a5f53e-757a-4161-933b-e97177f9bc82"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_tgl_spk}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="64" uuid="2b1050b8-60c4-4309-a4d4-98238af7b0b0">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="64" height="30" uuid="b290a50c-5057-4893-b5bc-734e0b6cf656"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nama Perusahaan]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="64" height="20" uuid="0e829fc2-fc29-46dc-a272-7352461a30c5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_nm_perusahaan}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="ccbc5d1e-d900-4160-b892-2f6e6c11c140">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="30" uuid="84734869-88f6-476d-abef-66f285be4dea"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[No SPK]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="50" height="20" uuid="458a37e4-06d5-4271-9fa2-22bd8baee8d1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_no_spk}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="46" uuid="d02d43f6-4d65-42ee-a0bb-cdea189f5d33">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="46" height="30" uuid="120f94de-ab9a-4dc4-8b49-02f91c8ce611"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Status]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="46" height="20" uuid="8eb9cf24-ad2f-4803-933c-1560804eaf8b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_status}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="96" uuid="32c63f0f-edfb-4c2c-ab4b-16fb70fdbb6e">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="96" height="30" uuid="9824ffe5-0371-4a77-a894-5ea4b56c5da4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nama Proyek]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="96" height="20" uuid="78057d95-ca74-437b-977f-62d706525c9f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_nm_proyek}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="2a0d0ae7-9070-41b5-b9a9-6de3c8c50719">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="30" uuid="03bcc46e-5e1e-4feb-8945-fad3a5a6a6db"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nilai Kontrak]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="50" height="20" uuid="9f09524b-5a75-4af7-ab42-2fabbe1fbed6"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_nilai_kontrak}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="e0b5929b-d6ea-4cee-8017-a6e49390993f">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="30" uuid="66f109b6-5ef1-40f1-ab27-1351b33d9992"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[No Dokumen]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="50" height="20" uuid="356fdf66-b290-457c-9c72-d522a661e711"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_no_dokumen_statuspo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="d8ad6ef9-4cd1-4ba7-904c-c8a451e62451">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="6767d066-7c69-448a-a4aa-f1a5ebfe64e7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Revisi]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="20" uuid="a418e134-0ad2-4c2d-bfca-464925f40dff"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_revisi}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="48" uuid="82c865b7-7324-49b9-be5e-86b3d47e6f54">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="48" height="30" uuid="9ff16671-158f-41e9-bbaa-588496f4cc6a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Tanggal]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="48" height="20" uuid="2e3cac1e-fade-4349-b565-388c917f0b75"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_tanggal}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="adc0e21b-7e54-4a66-9dcd-8955fb7db355">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="fdb1b143-f96d-4734-b527-ec6a087e129a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nama Staff]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="31c99999-49d5-453c-8a1a-acda6bc2db16"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_nama_staf_market}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="870c4118-5efa-4d47-9e81-c1e6471c22c2">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="01e9e769-f5c0-429b-9e35-45ffe9567754"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nama Manager]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="8b841e80-b483-4845-b214-927b1e5572df"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_statuspo_nama_manager}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="612" y="25" width="100" height="20" uuid="138c503b-0dc2-45ea-993f-9fc6670276b2"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Staff Marketing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="25" width="100" height="20" uuid="95c25492-93e0-4e8f-8886-5ee79b30962d"/>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<text><![CDATA[Manager Marketing]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="612" y="34" width="100" height="20" uuid="1a0ae593-925b-4889-aca8-efabbf9a6845"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Dwi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="34" width="100" height="20" uuid="a47b6b86-75e4-441d-b295-79875f20d738"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Dwi]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

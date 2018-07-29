@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="822" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10" uuid="d3f0f06f-22a7-46a4-ab0a-2fd80166d107">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="DatasetLogBook" uuid="11318d6c-6dd5-4eee-9b4b-606777092066">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     tb_logbook.`kode_marketing` AS tb_logbook_kode_marketing,
+     tb_logbook.`no_penawaran` AS tb_logbook_no_penawaran,
+     tb_logbook.`tanggal` AS tb_logbook_tanggal,
+     tb_logbook.`nilai_penawaran` AS tb_logbook_nilai_penawaran,
+     tb_logbook.`kualifikasi` AS tb_logbook_kualifikasi,
+     tb_logbook.`nama_perusahaan` AS tb_logbook_nama_perusahaan,
+     tb_logbook.`nama_proyek` AS tb_logbook_nama_proyek,
+     tb_logbook.`status` AS tb_logbook_status,
+     tb_logbook.`no_dok_logbook` AS tb_logbook_no_dok_logbook,
+     tb_logbook.`tanggal_efektif` AS tb_logbook_tanggal_efektif,
+     tb_logbook.`revisi` AS tb_logbook_revisi,
+     tb_logbook.`nama_staf` AS tb_logbook_nama_staf,
+     tb_logbook.`nama_manager` AS tb_logbook_nama_manager
+FROM
+     `tb_logbook` tb_logbook]]>
+		</queryString>
+		<field name="tb_logbook_kode_marketing" class="java.lang.String"/>
+		<field name="tb_logbook_no_penawaran" class="java.lang.String"/>
+		<field name="tb_logbook_tanggal" class="java.lang.String"/>
+		<field name="tb_logbook_nilai_penawaran" class="java.lang.String"/>
+		<field name="tb_logbook_kualifikasi" class="java.lang.String"/>
+		<field name="tb_logbook_nama_perusahaan" class="java.lang.String"/>
+		<field name="tb_logbook_nama_proyek" class="java.lang.String"/>
+		<field name="tb_logbook_status" class="java.lang.String"/>
+		<field name="tb_logbook_no_dok_logbook" class="java.lang.String"/>
+		<field name="tb_logbook_tanggal_efektif" class="java.lang.String"/>
+		<field name="tb_logbook_revisi" class="java.lang.String"/>
+		<field name="tb_logbook_nama_staf" class="java.lang.String"/>
+		<field name="tb_logbook_nama_manager" class="java.lang.String"/>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_logbook.`kode_marketing` AS tb_logbook_kode_marketing,
+     tb_logbook.`no_penawaran` AS tb_logbook_no_penawaran,
+     tb_logbook.`tanggal` AS tb_logbook_tanggal,
+     tb_logbook.`nilai_penawaran` AS tb_logbook_nilai_penawaran,
+     tb_logbook.`kualifikasi` AS tb_logbook_kualifikasi,
+     tb_logbook.`nama_perusahaan` AS tb_logbook_nama_perusahaan,
+     tb_logbook.`nama_proyek` AS tb_logbook_nama_proyek,
+     tb_logbook.`status` AS tb_logbook_status,
+     tb_logbook.`no_dok_logbook` AS tb_logbook_no_dok_logbook,
+     tb_logbook.`tanggal_efektif` AS tb_logbook_tanggal_efektif,
+     tb_logbook.`revisi` AS tb_logbook_revisi,
+     tb_logbook.`nama_staf` AS tb_logbook_nama_staf,
+     tb_logbook.`nama_manager` AS tb_logbook_nama_manager
+FROM
+     `tb_logbook` tb_logbook]]>
+	</queryString>
+	<field name="tb_logbook_kode_marketing" class="java.lang.String"/>
+	<field name="tb_logbook_no_penawaran" class="java.lang.String"/>
+	<field name="tb_logbook_tanggal" class="java.lang.String"/>
+	<field name="tb_logbook_nilai_penawaran" class="java.lang.String"/>
+	<field name="tb_logbook_kualifikasi" class="java.lang.String"/>
+	<field name="tb_logbook_nama_perusahaan" class="java.lang.String"/>
+	<field name="tb_logbook_nama_proyek" class="java.lang.String"/>
+	<field name="tb_logbook_status" class="java.lang.String"/>
+	<field name="tb_logbook_no_dok_logbook" class="java.lang.String"/>
+	<field name="tb_logbook_tanggal_efektif" class="java.lang.String"/>
+	<field name="tb_logbook_revisi" class="java.lang.String"/>
+	<field name="tb_logbook_nama_staf" class="java.lang.String"/>
+	<field name="tb_logbook_nama_manager" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle">
+				<reportElement x="3" y="0" width="817" height="105" uuid="8fa302d4-7aee-4487-a0b2-849544ca57c9"/>
+				<imageExpression><![CDATA["C:\\Users\\veri\\Documents\\ISOMRKT\\src\\IMG\\logo2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="11" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="264" y="0" width="292" height="41" uuid="73ffebfe-d87a-4633-84d5-5d7351b31744"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="24"/>
+				</textElement>
+				<text><![CDATA[Laporan Logbook]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="141" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table 1" style="table 1" x="0" y="0" width="820" height="100" uuid="47aa4443-5831-4363-a5b3-d403ab0e2c28"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="DatasetLogBook" uuid="d72b8824-216a-40a6-afd8-2946efa7966b">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="48" uuid="8c71cb0c-1382-4e7f-b1a4-67b73bef0590">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="48" height="30" uuid="9efe8a46-76d7-427c-bcd0-569f7165724d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Kode Marketing]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="48" height="20" uuid="e73ab0ca-72f2-4f34-8346-c07cfd58da8a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_kode_marketing}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="56" uuid="4ddd7825-ac95-4c9d-b554-3cc77e49911e">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="56" height="30" uuid="da5fde92-7b9c-4497-a080-bf97191e09f7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[No Penawaran]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="56" height="20" uuid="4de97dd3-8353-457b-9ac2-23048f2f2f59"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_no_penawaran}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="56" uuid="057a4046-0171-4f9e-a8ba-e0310a3a1ac7">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="56" height="30" uuid="6f0da420-3614-497e-9d7b-b4b8a564d86d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Tanggal]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="56" height="20" uuid="9b2282b5-74c3-492d-b6ee-4b639a5abcc0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_tanggal}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="66" uuid="0c495b16-70be-45ee-ad03-a3de28314039">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="66" height="30" uuid="14d1ec64-fb73-4853-a733-8069136f24c8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nilai Penawaran]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="66" height="20" uuid="1fa0ad6a-959f-4cb2-9768-2a7fa382097f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_nilai_penawaran}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="66" uuid="098367a1-3e1f-4ce2-ada9-0fcc52143ed9">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="66" height="30" uuid="6c7eceda-ac28-4c81-b003-e3480fa408f8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Kualifikasi]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="66" height="20" uuid="6aedd11d-d413-4974-be8a-caaf8a7fad5c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_kualifikasi}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="3d229d1f-eeab-429b-a667-2a0f856f1313">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="98ad85eb-da28-4271-9a73-ddb34452bce3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nama Perusahaan]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="90" height="20" uuid="0c694113-41a2-4362-aaee-365978cdbe45"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_nama_perusahaan}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="394d7c8b-f64c-475d-ba55-99a79b6c929c">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="da69f0f2-ba89-4f42-bdaa-171ba3868dce"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nama Proyek]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="90" height="20" uuid="eb0f8546-46b8-460a-a3d6-37be52a3efab"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_nama_proyek}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="56" uuid="3b54064b-b009-4280-a1fa-9566020396d0">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="56" height="30" uuid="4a795c1c-b038-41c8-a0cc-82ecd32ed0fb"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Status]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="56" height="20" uuid="8832a4ae-4126-41e5-8b89-5a7681b3bbc0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_status}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="58" uuid="e52b904e-e49f-45d2-aad7-334ef6402675">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="58" height="30" uuid="795713a7-45fe-4d43-b45e-c27fca30f5d6"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[No Dokumen]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="58" height="20" uuid="221c0067-0c10-44d2-b918-e04e7dc9416e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_no_dok_logbook}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="74" uuid="bdd7f108-4437-4d21-a217-73e41f86560a">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="74" height="30" uuid="8c6bab10-e209-46ea-9259-59340b7d35c4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Tanggal Efektif]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="74" height="20" uuid="d76de18c-afac-4462-9da3-329d6854a878"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_tanggal_efektif}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="28" uuid="751ba458-b5fb-4ec9-b7d4-ede632f3645a">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="28" height="30" uuid="36eee775-55e2-4a8f-baba-a0965f1e7480"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Rev]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="28" height="20" uuid="0c14fb0e-d3ec-4144-a378-a70bae0293cc"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_revisi}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="b170b363-5581-4ad1-bfa7-73b5cac12a39">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="30" uuid="b1a2622b-cac0-405d-93e5-49b1c0fb6b5f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nama Staff]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="20" uuid="c4af9d66-0188-4f32-9d88-4d5607c8a1c5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_nama_staf}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="f37e6892-2737-45cf-9a8b-69cfdfc59807">
+						<jr:tableHeader style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table 1_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="80" height="30" uuid="4d91578c-f53f-4c6e-bec2-37f2d3e56422"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Nama Manager]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 1_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table 1_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="20" uuid="fcfd1b51-e5bf-4a49-82ef-24ba8a684839"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tb_logbook_nama_manager}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="56" y="25" width="100" height="20" uuid="0ad7e57f-78fa-402a-9cb2-74bf4688ab59"/>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<text><![CDATA[Manager Marketing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="636" y="25" width="100" height="20" uuid="bdde3a11-d995-432c-909f-2d04dbd31f39"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Staff Marketing]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="68" splitType="Stretch">
+			<staticText>
+				<reportElement x="56" y="48" width="100" height="20" uuid="ff87dd3f-6d80-4070-ad79-c57f41829356"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Yulian Ponco]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="636" y="48" width="100" height="20" uuid="a8ec360a-ba4b-409a-8c02-00c74017686b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Dwi]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
